@@ -11,4 +11,3 @@ spec:
     targetPort: 8082
   selector:
     service: my-udagram-reverseproxy
-  type: LoadBalancer
