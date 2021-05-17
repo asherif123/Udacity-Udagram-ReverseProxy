@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - image: abdelrahmansherif/udacity-udagram-reverseproxy
-        name: my-udagram-reverseproxy
+        name: udagram-reverseproxy
         imagePullPolicy: Always          
         resources:
           requests:
