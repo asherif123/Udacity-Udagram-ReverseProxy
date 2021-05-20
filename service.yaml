@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
+  name: my-udagram-reverseproxy-svc
   labels:
-    service: my-udagram-reverseproxy
-  name: my-udagram-reverseproxy
+    run: my-udagram-reverseproxy-svc
 spec:
   ports:
-  - name: "8082"
-    port: 8082
+  - port: 8082
     targetPort: 8082
+    protocol: TCP
   selector:
-    service: my-udagram-reverseproxy
+    app: my-udagram-reverseproxy
